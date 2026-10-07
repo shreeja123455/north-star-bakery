@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact & Preorders | North Star Bakery</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -41,14 +42,17 @@
 
   <section>
     <h2>Inquiry and Preorder Request</h2>
-    <form action="contact.html" method="get">
+    <p id="storage-notice" class="storage-notice" hidden></p>
+    <form id="preorder-form" action="contact.html" method="get" novalidate>
       <fieldset>
         <legend>Your Contact Information</legend>
         <p><label for="name">Full name (required)</label><br>
-        <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required></p>
+        <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required>
+        <span id="name-error" class="field-error" hidden></span></p>
 
         <p><label for="email">Email address (required)</label><br>
-        <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></p>
+        <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+        <span id="email-error" class="field-error" hidden></span></p>
       </fieldset>
 
       <fieldset>
@@ -64,13 +68,15 @@
         <input id="pickup" name="pickup" type="date"></p>
 
         <p><label for="details">Item details or question (required)</label><br>
-        <textarea id="details" name="details" rows="5" minlength="10" maxlength="2000" required></textarea></p>
+        <textarea id="details" name="details" rows="5" minlength="10" maxlength="2000" required></textarea>
+        <span id="details-error" class="field-error" hidden></span></p>
 
         <p><label for="allergies">Allergy notes (optional)</label><br>
         <textarea id="allergies" name="allergies" rows="3" maxlength="1000"></textarea></p>
       </fieldset>
 
       <button type="submit">Submit Request</button>
+      <p id="form-status" class="form-status" aria-live="polite"></p>
     </form>
   </section>
 </main>

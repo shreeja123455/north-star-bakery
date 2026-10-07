@@ -236,3 +236,57 @@ audio { width: 100%; max-width: 520px; }
   .hero { padding: 2rem; }
   h1 { font-size: 3rem; }
 }
+
+/* Touchstone 4 interactivity */
+.favorites-panel {
+  background: white;
+  border: 2px solid var(--peach);
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.favorite-button {
+  width: 100%;
+  margin-top: 1rem;
+  background: var(--cream);
+  color: var(--brown);
+  border: 2px solid var(--peach);
+}
+
+.favorite-button.is-favorite {
+  background: var(--peach);
+  color: var(--charcoal);
+}
+
+.field-error {
+  display: block;
+  color: #8b1e1e;
+  font-weight: 700;
+  margin-top: .35rem;
+}
+
+[aria-invalid="true"] {
+  border: 2px solid #8b1e1e;
+  background: #fff7f7;
+}
+
+.form-status,
+.storage-notice {
+  margin-top: 1rem;
+  padding: .8rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.error-status {
+  background: #fff0f0;
+  color: #8b1e1e;
+}
+
+.success-status,
+.storage-notice {
+  background: #f6eadf;
+  color: var(--brown);
+  border-left: 5px solid var(--peach);
+}
