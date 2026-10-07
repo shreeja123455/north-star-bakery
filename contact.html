@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Preorders | North Star Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <p class="brand">North Star Bakery</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html" aria-current="page">Contact & Preorders</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <h1>Contact and Preorders</h1>
+
+  <section class="two-column">
+    <div class="card">
+      <h2>Visit North Star Bakery</h2>
+      <address>North Star Bakery<br>100 Main Street<br>Neighborhood Center</address>
+      <p>Monday–Saturday: 7 a.m.–5 p.m.<br>Sunday: Closed</p>
+    </div>
+    <div class="card">
+      <h2>Before You Submit</h2>
+      <p>Pickup requests are subject to confirmation. For general questions, leave the pickup date blank.</p>
+      <p>Fields marked required must be completed.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Inquiry and Preorder Request</h2>
+    <form action="contact.html" method="get">
+      <fieldset>
+        <legend>Your Contact Information</legend>
+        <p><label for="name">Full name (required)</label><br>
+        <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required></p>
+
+        <p><label for="email">Email address (required)</label><br>
+        <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Request Details</legend>
+        <p><label for="request">Request type (required)</label><br>
+        <select id="request" name="request" required>
+          <option value="">Choose a request type</option>
+          <option value="preorder">Preorder request</option>
+          <option value="question">General question</option>
+        </select></p>
+
+        <p><label for="pickup">Preferred pickup date</label><br>
+        <input id="pickup" name="pickup" type="date"></p>
+
+        <p><label for="details">Item details or question (required)</label><br>
+        <textarea id="details" name="details" rows="5" minlength="10" maxlength="2000" required></textarea></p>
+
+        <p><label for="allergies">Allergy notes (optional)</label><br>
+        <textarea id="allergies" name="allergies" rows="3" maxlength="1000"></textarea></p>
+      </fieldset>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>North Star Bakery — Handmade baking for our community.</p>
+</footer>
+
+</body>
+</html>
